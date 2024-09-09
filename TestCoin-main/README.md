@@ -40,4 +40,4 @@ POST /api/v1/TestCoin/blockchain/mine: Gräv block i blockchain.
 1. Klona detta repo:
 
 ```bash
-git clone https://github.com/dittanvandarnamn/TestCoin.git
+git clone https://github.com/Hussam-Abdulal/TestCoin-main.git
