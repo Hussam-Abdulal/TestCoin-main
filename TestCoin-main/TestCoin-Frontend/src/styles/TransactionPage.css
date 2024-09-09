@@ -1,0 +1,155 @@
+body {
+  background-color: #e8f5e9;
+}
+
+.transaction-page {
+  max-width: 800px;
+  margin: 5% auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f7f9fc;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; 
+}
+
+.transaction-page h1 {
+  color: #556b8b;
+}
+
+.logout-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  background-color: #556b8b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  white-space: nowrap;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.transaction-form label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.transaction-form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.transaction-form button,
+.mine-button,
+.list-button {
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #556b8b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.transaction-form button:hover,
+.mine-button:hover,
+.list-button:hover {
+  background-color: #556b8b;
+}
+
+.transaction-list,
+.block-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.transaction-item,
+.block-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+  word-wrap: break-word; 
+  overflow: hidden; 
+}
+
+.transaction-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  word-break: break-all; 
+}
+
+.wallet-address {
+  flex: 1;
+  padding: 5px;
+  word-wrap: break-word; 
+}
+
+.amounts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.sent,
+.remaining {
+  flex: 1;
+  text-align: center;
+}
+
+.block-item pre {
+  white-space: pre-wrap; 
+  word-wrap: break-word;  
+  max-width: 100%;
+  overflow: auto; 
+  background-color: #eef; 
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .transaction-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .amounts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sent,
+  .remaining {
+    text-align: left;
+    padding-top: 5px;
+  }
+}
+
+.message {
+  color: #556b8b;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
